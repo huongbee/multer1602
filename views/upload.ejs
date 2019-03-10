@@ -6,8 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <form method="POST">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
             <input type="file" name="avatar">
+            <br><br>
+            <input type="text" name="fullname" placeholder="Enter fullname">
+            <br><br>
             <button type="submit">Upload</button>
         </form>
     </body>
